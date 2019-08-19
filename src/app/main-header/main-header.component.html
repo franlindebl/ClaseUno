@@ -1,0 +1,13 @@
+<nav class="main-header">
+  <ul class="nav-links">
+
+    <!-- RECORRO EL LISTADO DE LINKS PINTÁNDOLOS -->
+    <li *ngFor="let enlace of links" class="nav-item">
+      <span (click)="emitUserClicked(enlace)">{{ enlace.title }}</span>
+    </li>
+    <!-- RECORRO EL LISTADO DE LINKS PINTÁNDOLOS -->
+
+    <button (click)="saludarUsuario()">¡Púlsame!</button>
+
+  </ul>
+</nav>
